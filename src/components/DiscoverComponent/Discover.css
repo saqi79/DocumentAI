@@ -1,0 +1,78 @@
+.discover-content {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../Images/digital-engineering-experts-collaborating-in-order-to-develop-advanced-scene-.jpg");
+  position: relative;
+}
+
+.discover-box {
+  width: 640px;
+  height: 370px;
+  border: 1px solid #ffffff36;
+  border-radius: 15px;
+  background-color: #282035;
+  padding: 55px 55px;
+  position: absolute;
+  bottom: -115px;
+  left: 65px;
+}
+
+.box-head {
+  margin-bottom: 20px;
+}
+
+.box-head h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.box-head-title {
+  margin-bottom: 30px;
+}
+
+.box-head-title p {
+  color: #ffffff7d;
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.discover-btn {
+  width: 165px;
+  height: 45px;
+}
+
+.discover-btn a {
+  text-decoration: none;
+}
+
+.discover-btn a button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-family: Helvetica, Arial, Sans-Serif;
+  background: rgb(180, 124, 253);
+  background: linear-gradient(
+    27deg,
+    rgba(180, 124, 253, 1) 30%,
+    rgba(255, 127, 194, 1) 100%
+  );
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: -25px 0px 20px -10px #ffb07b inset;
+}
+
+.discover-btn a button:hover {
+  background: rgb(255, 127, 194);
+  background: linear-gradient(
+    27deg,
+    rgba(255, 127, 194, 1) 30%,
+    rgba(180, 124, 253, 1) 100%
+  );
+  box-shadow: 3px 5px 30px 0px rgba(255, 255, 255, 0.3);
+}
