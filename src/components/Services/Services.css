@@ -1,0 +1,98 @@
+.main-service-container {
+  height: 100vh;
+  padding: 50px 0;
+}
+
+.service-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.service-top p {
+  padding: 0;
+  margin: 0;
+}
+
+.service-top p:nth-child(1) {
+  font-size: 15px;
+  color: #ff7fc2;
+  font-weight: 500;
+}
+
+.service-top p:nth-child(2) {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.serviceCard-outer {
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 1s ease-in-out;
+}
+
+.serviceCard-outer:hover {
+  transition-duration: 1s;
+  border-color: #b47cfd;
+  box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+}
+
+.serviceCard {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 40px;
+  background: #2b2338;
+  position: relative;
+  background: url(../../assets/images/bg_pattern.png), #2b2338;
+  background-size: 50px;
+}
+
+.serviceCard::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-image: linear-gradient(215deg, #2b233800 0%, #2b2338 65%);
+}
+
+.serviceCard-content {
+  position: relative;
+  z-index: 100;
+}
+
+.serviceCard-mid h5 {
+  color: white;
+}
+
+.serviceCard-mid p {
+  color: lightgray;
+}
+
+.get_started {
+  display: flex;
+  height: 37px;
+  width: 153px;
+  background-color: transparent;
+  background-image: linear-gradient(120deg, #b47cfd 20%, #ff7fc2 60%);
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: -25px 0px 20px -10px #ffb07b inset;
+  transition: 1s ease-in-out;
+}
+
+.get_started:hover {
+  transition-duration: 1s;
+  background-image: linear-gradient(70deg, #ff7fc2 0%, #b47cfd 100%);
+  box-shadow: 0px 5px 30px 0px rgba(255, 255, 255, 0.3);
+}

@@ -1,8 +1,11 @@
 .discover-content {
   width: 100%;
-  height: 100vh;
+  height: 421px;
   background-image: url("../../Images/digital-engineering-experts-collaborating-in-order-to-develop-advanced-scene-.jpg");
   position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
 }
 
 .discover-box {

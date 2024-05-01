@@ -1,0 +1,51 @@
+.main-engagement-container {
+  border: 1px solid;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #2b2338 0%, #0a0118 100%);
+  position: relative;
+}
+
+.main-engagement-container::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../assets/images/engagement-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.engagement-top {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.engagement-top p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.engagement-imgaes{
+    /* height: 49px; */
+    width: 233px;
+    padding: 21px;
+}
+
+.engagement-imgaes img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.3;
+    transition-duration: 1s;
+}
+
+.engagement-imgaes img:hover{
+    opacity: 1;
+}
