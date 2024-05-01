@@ -1,58 +1,43 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-
+import { Container } from "react-bootstrap";
+import BottomSvg from "../../assets/svgs/bottom-arrow-svgrepo-com.svg";
 const NavBar = () => {
   return (
-    <header className="header">
-      <nav className="nav container">
-        <NavLink to="/" className="nav__logo">
-          Document AI
-        </NavLink>
-
-        <div className={"nav__menu"} id="nav-menu">
-          <ul className="nav__list">
-            <li className="nav__item">
-              <NavLink to="/" className="nav__link">
-                Home
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/news" className="nav__link">
-                News
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/about-us" className="nav__link">
-                About Us
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/favorite" className="nav__link">
-                Favorite
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/location" className="nav__link">
-                Location
-              </NavLink>
-            </li>
-            <li className="nav__item">
-              <NavLink to="/get-started" className="nav__link nav__cta">
-                Get Started
-              </NavLink>
-            </li>
-          </ul>
-          <div className="nav__close" id="nav-close">
-            {/* <IoClose /> */}
+    <Container>
+      <header className="header">
+        <nav className="nav">
+          <NavLink className="nav_logo">Document AI</NavLink>
+          <div className={"nav__menu"} id="nav-menu">
+            <NavLink to="/" className="nav__link">
+              Homepage
+            </NavLink>
+            <NavLink to="/news" className="nav__link">
+              About us
+            </NavLink>
+            <NavLink to="/about-us" className="nav__link">
+              Services
+              <img src={BottomSvg} alt="" className="svgContainer" />
+            </NavLink>
+            <NavLink to="/favorite" className="nav__link">
+              Porfolio
+            </NavLink>
+            <NavLink to="/location" className="nav__link">
+              Contact us
+            </NavLink>
+            <NavLink to="/get-started" className="nav__link nav__cta">
+              Pages
+              <img src={BottomSvg} alt="" className="svgContainer" />
+            </NavLink>
+            <div className="nav__close" id="nav-close">
+              <div className="get_started">GET STARTED</div>
+            </div>
           </div>
-        </div>
-
-        <div className="nav__toggle" id="nav-toggle">
-          {/* <IoMenu /> */}
-        </div>
-      </nav>
-    </header>
+        </nav>
+        <div className="bottomLine"></div>
+      </header>
+    </Container>
   );
 };
 

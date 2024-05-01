@@ -6,11 +6,11 @@ import LandinPage from "../pages/LandinPage.js";
 function ReactRouter() {
   return (
     <Router>
-      {/* <NavBar /> */}
+      <NavBar />
       <main className="main-content">
         <Routes>
           <Route exact path="/" element={<LandinPage />} />
-          <Route path={NOTFOUND} element={<NotFound />} />
+          {/* <Route path={NOTFOUND} element={<NotFound />} /> */}
         </Routes>
       </main>
     </Router>
