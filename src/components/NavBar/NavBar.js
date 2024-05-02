@@ -3,13 +3,21 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { Container } from "react-bootstrap";
 import BottomSvg from "../../assets/svgs/bottom-arrow-svgrepo-com.svg";
+import NavLogo from "../../assets/images/logo_digimax.png";
 const NavBar = () => {
 
   return (
-    <Container>
-      <header className="header">
+    <header className="header">
+      <Container>
         <nav className="nav">
-          <NavLink className="nav_logo">Document AI</NavLink>
+          <div className="navLogo">
+            <NavLink className="nav_logo  d-flex align-items-center gap-3">
+              <div className="logoImg">
+                <img src={NavLogo} alt="" />
+              </div>
+              Document AI
+            </NavLink>
+          </div>
           <div className={"nav__menu"} id="nav-menu">
             <NavLink to="/" className="nav__link">
               Homepage
@@ -36,8 +44,8 @@ const NavBar = () => {
             </div>
           </div>
         </nav>
-      </header>
-    </Container>
+      </Container>
+    </header>
   );
 };
 

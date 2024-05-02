@@ -1,16 +1,22 @@
 import React from "react";
-import './HomeLand.css' 
+import "./HomeLand.css";
+import HomeVideo from "../../assets/video/bgVideo.mp4";
 
 const HomeLand = () => {
   return (
     <>
       <div className="home-main-container">
+        <div className="HomeVideo">
+          <video src={HomeVideo} autoPlay loop muted className="video" />
+        </div>
         <div className="home-content">
           <div className="head-title">
             <h3>Welcome to DigiMax</h3>
           </div>
           <div className="sub-head-title">
-            <h2>Your Path to Digital <br /> Excellence</h2>
+            <h2>
+              Your Path to Digital <br /> Excellence
+            </h2>
           </div>
           <div className="head-discrip">
             <p>

@@ -3,20 +3,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #090213; */
   padding: 150px;
   position: relative;
+  z-index: 100;
 }
 
+.HomeVideo {
+  position: absolute;
+  width: 100%;
+}
 
-/* .home-content::before{
-content: '';
-height: 100%;
-width: 100%;
-position: absolute;
-background: url(https://youtu.be/HXJEakm65FI);
-} */
+.HomeVideo::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-image: radial-gradient(at top center, #0a011880 10%, #0a0118 85%);
+}
 
+video.video{
+  width: 100%;
+  height: 100%;
+}
 
 .head-title {
   border: 1px solid #ff7fc2;
@@ -121,9 +130,8 @@ background: url(https://youtu.be/HXJEakm65FI);
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: 600;
-transition: .5s ease;
+  transition: 0.5s ease;
 }
-
 
 .learn-btn a button:hover {
   background: rgb(180, 124, 253);
