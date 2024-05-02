@@ -3,6 +3,7 @@ import { NOTFOUND } from "../global/RouterScreenName";
 import NotFound from "./NotFound.js";
 import NavBar from "../components/NavBar/NavBar.js";
 import LandinPage from "../pages/LandinPage.js";
+import CustomFooter from "../components/Footer/index.js";
 function ReactRouter() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function ReactRouter() {
           {/* <Route path={NOTFOUND} element={<NotFound />} /> */}
         </Routes>
       </main>
+      <CustomFooter />
     </Router>
   );
 }
