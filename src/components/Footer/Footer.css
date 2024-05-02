@@ -1,0 +1,42 @@
+.co-head h2{
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+.co-head p{
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+
+.socials{
+    display: flex;
+    gap: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.socials img{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.font-style{
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, Arial, Sans-Serif;
+
+}
+
+.head-clr{
+    color: #fff;
+}
+
+.font-style a{
+    text-decoration: none;
+    color: #fff;
+}

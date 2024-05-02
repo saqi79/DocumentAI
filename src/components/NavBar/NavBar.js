@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { Container } from "react-bootstrap";
 import BottomSvg from "../../assets/svgs/bottom-arrow-svgrepo-com.svg";
 const NavBar = () => {
+
   return (
     <Container>
       <header className="header">
@@ -35,7 +36,6 @@ const NavBar = () => {
             </div>
           </div>
         </nav>
-        <div className="bottomLine"></div>
       </header>
     </Container>
   );
