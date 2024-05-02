@@ -1,3 +1,8 @@
+.footer-content{
+    border-top: 1px solid #2b2338;
+    border-bottom: 1px solid #2b2338;
+}
+
 .co-head h2{
     color: #fff;
     font-family: Helvetica, Arial, Sans-Serif;
@@ -38,5 +43,28 @@
 
 .font-style a{
     text-decoration: none;
-    color: #fff;
+    color: #ffffff7e;
+}
+
+.copy-rights-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-part h3{
+    color: #ffffff7e;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+
+.right-part{
+    display: flex;
+    gap: 20px;
+}
+
+.right-part a{
+    text-transform: none !important;
+    color: #ffffff7e;
+
 }
